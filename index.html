@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Coding Quiz</title>
+  </head>
+    <body>
+      <div class="jumbotron leadercontainer">
+        <h2>Code Quiz For Beginners</h2>
+        <button class="btn " id="leaderBoardButton" onclick= accessLeaderboard() >Leaderboard</button>
+        <div class="container leadercontainer jumbotron hide" id="jumbotronLeader">
+          <h1>Hall of Fame</h1>
+              <ol>
+                  <ul input type ='text' name="firstPlace" placeholder="First Place" class="leaderRank">1.</ul>
+                  <ul input type ='text' name="secondPlace" placeholder="Second Place" class="leaderRank2">2.</ul>
+                  <ul input type ='text' name="thirdPlace" placeholder="Third Place" class="leaderRank3">3. </ul>
+  
+              </ol>
+  
+              <button class='btn-outline-primary btn-lg hide'>Submit</button> 
+  
+          </div>
+        <span id="right-answers"></span>
+        <div id="gameTimer"></div>
+        
+
+      </div>
+        <div class="container">
+          <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+          </div>
+        </div>
+
+     
+  
+              
+              
+             
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
